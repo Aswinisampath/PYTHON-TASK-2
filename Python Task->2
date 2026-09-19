@@ -1,0 +1,9 @@
+balance = 1000
+while balance > 0:
+    withdrawal_amount = int(input("Enter the withdrawal amount: "))
+    if withdrawal_amount <= balance:
+        balance = balance - withdrawal_amount
+        print("Withdrawal successful")
+        print("Remaining balance:", balance)
+    else:
+        print("Insufficient balance!")
